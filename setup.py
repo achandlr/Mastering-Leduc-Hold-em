@@ -6,7 +6,8 @@ with open("README.md", "r", encoding="utf8") as fh:
 extras = {
     'torch': ['torch', 'GitPython', 'gitdb2', 'matplotlib'],
 }
-
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
 def _get_version():
     with open('rlcard/__init__.py') as f:
         for line in f:

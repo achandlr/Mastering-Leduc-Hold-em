@@ -38,7 +38,6 @@ Our installation follows the basic process outlined in the RLCard readme. Please
 The following steps are
 ```
 pip3 install rlcard
-cd rlcard
 pip3 install -e .
 ```
 
