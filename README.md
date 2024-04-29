@@ -1,6 +1,6 @@
 # Mastering Leduc Hold'em: A Comparative Study of CFR and Reinforcement Learning
 
-This project is an extension of the RLCard library, focusing on a comparative study of Counterfactual Regret Minimization (CFR) and Reinforcement Learning (RL) algorithms for the game of Leduc Hold'em. We have implemented 18 different agents, including various CFR and RL agents, and compared their performance against each other.
+This project is an extension of the work done by datamllab - RLCard library, focusing on a comparative study of Counterfactual Regret Minimization (CFR) and Reinforcement Learning (RL) algorithms for the game of Leduc Hold'em. We have implemented 18 different agents, including various CFR and RL agents, and compared their performance against each other.
 
 ## Our Contributions
 ### We have added the following agents to the RLCard library:
@@ -32,8 +32,8 @@ All of our agent implementations can be found in the rlcard/agents/our_agents di
 ## Installation
 Our installation follows the basic process outlined in the RLCard readme. Please follow the following process.
 
-- git clone our repository
 - Ensure that you have **Python 3.8+** and **pip** installed.
+- git clone our repository
 
 The following steps are
 ```
@@ -59,7 +59,13 @@ This will create a round-robin tournament where each agent plays against every o
 - Average Big Blind per Hand (BBPH)
 - Elo rating of each agent 
 
+To evaluate agents in a tournament, please see the instruction from datamllab - RLCard-showdown. Models can be loaded through the server-based GUI. As a fair warning, many of the package dependencies within RLCCard-showdown that interface with Django, Flash, and others will likely throw critical warnings. The server front end was still able to be launched and executed to review our bots and their performance.
+
 ### Acknowledgements
 
 This project is built upon the RLCard library. We would like to express our gratitude to the RLCard team for their excellent work and for providing a platform for researching reinforcement learning in card games.
-Please refer to the original RLCard README below for more information on the library, including installation instructions, available environments, and supported algorithms.
+Please refer to the original [RLCard README](https://github.com/datamllab/rlcard/blob/master/README.md) or [RLCard-showdown README](https://github.com/datamllab/rlcard-showdown/blob/master/README.md) for more information on the library, including installation instructions, available environments, and supported algorithms.
+
+
+## Application Programming Interface (API)
+The API documents are available at [Official Website](http://www.rlcard.org).
