@@ -43,7 +43,7 @@ This matrix compares poker AI model performance in head-to-head play after one h
 This matrix compares poker AI model performance in head-to-head play after training on 10,000 hands. Values show the net average big blinds won/lost per hand (BBPH) over 8,000 hands. Redder cells indicate the row model outperformed the column model.
 
 ### Training Curve
-![Training Curve](visualizations/TrainingCurve.png)
+![Training Curve](visualizations/Training%20Curve.png)
 This plot shows the reward (measured by BBPH) at training checkpoints where the agent plays against a random agent over 1,000 hands. It is used to visualize learning instability rather than as a performance measure, as evaluating against a random agent is a weak indicator of agent performance.
 
 All of our agent implementations can be found in the rlcard/agents/our_agents directory.
