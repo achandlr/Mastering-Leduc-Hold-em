@@ -27,6 +27,25 @@ This project is an extension of the work done by datamllab - RLCard library, foc
 - Q-Learning
 - REINFORCE
 
+## Visualizations
+Our study shows that CFR methods, particularly CFR+ and CFR Vanilla, outperform all other trained agents in the game of Leduc Hold'em. The top-performing agents utilize a balanced betting strategy, with folding being the least common action. Additionally, our top-performing bots demonstrate advanced strategies such as bluffing.
+
+### Elo Ratings
+![Elo Ratings of Agents](visualizations/ELO_agents.png)
+This table shows the Elo rankings of all agents, along with their action percentages. CFR+ and CFR Vanilla outperform all other trained agents, and the top-performing bots employ a balanced betting strategy.
+
+### BBPH Matrix (One Hour Training)
+![Training Performance over One Hour](visualizations/BBPH_one_hour_training_each.png)
+This matrix compares poker AI model performance in head-to-head play after one hour of training. Values show the net average big blinds won/lost per hand (BBPH) over 8,000 hands. Redder cells indicate the row model outperformed the column model
+
+### BBPH Matrix (10,000 Episodes Training)
+![Training over 10,000 Episodes](visualizations/BBPH_10_000_episodes_training_each.png)
+This matrix compares poker AI model performance in head-to-head play after training on 10,000 hands. Values show the net average big blinds won/lost per hand (BBPH) over 8,000 hands. Redder cells indicate the row model outperformed the column model.
+
+### Training Curve
+![Training Curve](visualizations/Training Curve.png)
+This plot shows the reward (measured by BBPH) at training checkpoints where the agent plays against a random agent over 1,000 hands. It is used to visualize learning instability rather than as a performance measure, as evaluating against a random agent is a weak indicator of agent performance.
+
 All of our agent implementations can be found in the rlcard/agents/our_agents directory.
 
 ## Installation
